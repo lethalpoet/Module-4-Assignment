@@ -1,0 +1,40 @@
+Steps to correct code:
+Review all variable declarations for spelling and correct data types
+Check that every input statement has a matching variable
+Trace the program one line at a time using sample data
+Verify calculations are performed correctly
+Check loop conditions to ensure they terminate properly
+Test both passing and failing scenarios to verify the program produces the expected output
+
+
+
+
+
+start
+   Declarations
+      num firstTest
+      num secondTest
+      num average
+      num PASSING = 60
+
+   output "Enter first score or 0 to quit"
+   input firstTest
+
+   while firstTest <> 0
+      output "Enter second score"
+      input secondTest
+
+      average = (firstTest + secondTest) / 2
+
+      output "Average is ", average
+
+      if average >= PASSING then
+         output "Pass"
+      else
+         output "Fail"
+      endif
+
+      output "Enter first score or 0 to quit"
+      input firstTest
+   endwhile
+stop
